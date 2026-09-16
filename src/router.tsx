@@ -8,16 +8,19 @@ const ProductDetail = lazy(() => import('./pages/ProductDetail'))
 const Cart = lazy(() => import('./pages/Cart'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 
-export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: 'catalogo', element: <Catalog /> },
-      { path: 'producto/:slug', element: <ProductDetail /> },
-      { path: 'carrito', element: <Cart /> },
-      { path: '*', element: <NotFound /> },
-    ],
-  },
-])
+export const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'catalogo', element: <Catalog /> },
+        { path: 'producto/:slug', element: <ProductDetail /> },
+        { path: 'carrito', element: <Cart /> },
+        { path: '*', element: <NotFound /> },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL.replace(/\/$/, '') },
+)
