@@ -9,23 +9,65 @@
         "key": "negro",
         "name": "Negro",
         "hex": "#1a1a1a",
-        "photos": ["/img/rmc-negro-1.svg", "/img/rmc-negro-2.svg", "/img/rmc-negro-3.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Monocromo%2001&font=montserrat",
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Monocromo%2002&font=montserrat",
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Monocromo%2003&font=montserrat"
+        ]
       },
       {
         "key": "blanco",
         "name": "Blanco",
         "hex": "#f5f2ec",
-        "photos": ["/img/rmc-blanco-1.svg", "/img/rmc-blanco-2.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/f5f2ec/1a1a1a.png?text=R.%20Monocromo%2001&font=montserrat",
+          "https://placehold.co/1200x1600/f5f2ec/1a1a1a.png?text=R.%20Monocromo%2002&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rmc-negro-s", "size": "S", "color": "negro", "available": true },
-      { "id": "rmc-negro-m", "size": "M", "color": "negro", "available": true },
-      { "id": "rmc-negro-l", "size": "L", "color": "negro", "available": true },
-      { "id": "rmc-negro-xl", "size": "XL", "color": "negro", "available": true },
-      { "id": "rmc-blanco-m", "size": "M", "color": "blanco", "available": true },
-      { "id": "rmc-blanco-l", "size": "L", "color": "blanco", "available": false },
-      { "id": "rmc-blanco-xl", "size": "XL", "color": "blanco", "available": true }
+      {
+        "id": "rmc-negro-s",
+        "size": "S",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rmc-negro-m",
+        "size": "M",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rmc-negro-l",
+        "size": "L",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rmc-negro-xl",
+        "size": "XL",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rmc-blanco-m",
+        "size": "M",
+        "color": "blanco",
+        "available": true
+      },
+      {
+        "id": "rmc-blanco-l",
+        "size": "L",
+        "color": "blanco",
+        "available": false
+      },
+      {
+        "id": "rmc-blanco-xl",
+        "size": "XL",
+        "color": "blanco",
+        "available": true
+      }
     ]
   },
   {
@@ -38,20 +80,44 @@
         "key": "blanco",
         "name": "Blanco",
         "hex": "#faf9f6",
-        "photos": ["/img/rpd-blanco-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/faf9f6/1a1a1a.png?text=R.%20Podio%2001&font=montserrat"
+        ]
       },
       {
         "key": "verde",
         "name": "Verde",
         "hex": "#3a5a40",
-        "photos": ["/img/rpd-verde-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/3a5a40/f5f2ec.png?text=R.%20Podio%2001&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rpd-blanco-m", "size": "M", "color": "blanco", "available": true },
-      { "id": "rpd-blanco-l", "size": "L", "color": "blanco", "available": true },
-      { "id": "rpd-verde-m", "size": "M", "color": "verde", "available": true },
-      { "id": "rpd-verde-l", "size": "L", "color": "verde", "available": false }
+      {
+        "id": "rpd-blanco-m",
+        "size": "M",
+        "color": "blanco",
+        "available": true
+      },
+      {
+        "id": "rpd-blanco-l",
+        "size": "L",
+        "color": "blanco",
+        "available": true
+      },
+      {
+        "id": "rpd-verde-m",
+        "size": "M",
+        "color": "verde",
+        "available": true
+      },
+      {
+        "id": "rpd-verde-l",
+        "size": "L",
+        "color": "verde",
+        "available": false
+      }
     ]
   },
   {
@@ -64,21 +130,50 @@
         "key": "negro",
         "name": "Negro",
         "hex": "#1a1a1a",
-        "photos": ["/img/bas-negro-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20B%C3%A1sica%2001&font=montserrat"
+        ]
       },
       {
         "key": "gris",
         "name": "Gris Perla",
         "hex": "#cfccc6",
-        "photos": ["/img/bas-gris-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/cfccc6/1a1a1a.png?text=R.%20B%C3%A1sica%2001&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "bas-negro-s", "size": "S", "color": "negro", "available": true },
-      { "id": "bas-negro-m", "size": "M", "color": "negro", "available": true },
-      { "id": "bas-negro-l", "size": "L", "color": "negro", "available": true },
-      { "id": "bas-gris-m", "size": "M", "color": "gris", "available": true },
-      { "id": "bas-gris-l", "size": "L", "color": "gris", "available": true }
+      {
+        "id": "bas-negro-s",
+        "size": "S",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "bas-negro-m",
+        "size": "M",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "bas-negro-l",
+        "size": "L",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "bas-gris-m",
+        "size": "M",
+        "color": "gris",
+        "available": true
+      },
+      {
+        "id": "bas-gris-l",
+        "size": "L",
+        "color": "gris",
+        "available": true
+      }
     ]
   },
   {
@@ -91,20 +186,44 @@
         "key": "burdeo",
         "name": "Bordó",
         "hex": "#5e2333",
-        "photos": ["/img/ed-burdeo-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/5e2333/f5f2ec.png?text=R.%20Edici%C3%B3n%20Limitada%2001&font=montserrat"
+        ]
       },
       {
         "key": "mostaza",
         "name": "Mostaza",
         "hex": "#d9a441",
-        "photos": ["/img/ed-mostaza-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/d9a441/1a1a1a.png?text=R.%20Edici%C3%B3n%20Limitada%2001&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "ed-burdeo-m", "size": "M", "color": "burdeo", "available": true },
-      { "id": "ed-burdeo-l", "size": "L", "color": "burdeo", "available": true },
-      { "id": "ed-mostaza-m", "size": "M", "color": "mostaza", "available": true },
-      { "id": "ed-mostaza-l", "size": "L", "color": "mostaza", "available": true }
+      {
+        "id": "ed-burdeo-m",
+        "size": "M",
+        "color": "burdeo",
+        "available": true
+      },
+      {
+        "id": "ed-burdeo-l",
+        "size": "L",
+        "color": "burdeo",
+        "available": true
+      },
+      {
+        "id": "ed-mostaza-m",
+        "size": "M",
+        "color": "mostaza",
+        "available": true
+      },
+      {
+        "id": "ed-mostaza-l",
+        "size": "L",
+        "color": "mostaza",
+        "available": true
+      }
     ]
   },
   {
@@ -117,22 +236,57 @@
         "key": "negro",
         "name": "Negro",
         "hex": "#1a1a1a",
-        "photos": ["/img/rst-negro-1.svg", "/img/rst-negro-2.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Street%2001&font=montserrat",
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Street%2002&font=montserrat"
+        ]
       },
       {
         "key": "celeste",
         "name": "Celeste",
         "hex": "#a7c4d6",
-        "photos": ["/img/rst-celeste-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/a7c4d6/1a1a1a.png?text=R.%20Street%2001&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rst-negro-s", "size": "S", "color": "negro", "available": true },
-      { "id": "rst-negro-m", "size": "M", "color": "negro", "available": true },
-      { "id": "rst-negro-l", "size": "L", "color": "negro", "available": true },
-      { "id": "rst-negro-xl", "size": "XL", "color": "negro", "available": true },
-      { "id": "rst-celeste-m", "size": "M", "color": "celeste", "available": true },
-      { "id": "rst-celeste-l", "size": "L", "color": "celeste", "available": true }
+      {
+        "id": "rst-negro-s",
+        "size": "S",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rst-negro-m",
+        "size": "M",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rst-negro-l",
+        "size": "L",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rst-negro-xl",
+        "size": "XL",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rst-celeste-m",
+        "size": "M",
+        "color": "celeste",
+        "available": true
+      },
+      {
+        "id": "rst-celeste-l",
+        "size": "L",
+        "color": "celeste",
+        "available": true
+      }
     ]
   },
   {
@@ -145,13 +299,32 @@
         "key": "blanco",
         "name": "Blanco",
         "hex": "#f5f2ec",
-        "photos": ["/img/rcl-blanco-1.svg", "/img/rcl-blanco-2.svg", "/img/rcl-blanco-3.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/f5f2ec/1a1a1a.png?text=R.%20Cl%C3%A1sica%2001&font=montserrat",
+          "https://placehold.co/1200x1600/f5f2ec/1a1a1a.png?text=R.%20Cl%C3%A1sica%2002&font=montserrat",
+          "https://placehold.co/1200x1600/f5f2ec/1a1a1a.png?text=R.%20Cl%C3%A1sica%2003&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rcl-blanco-m", "size": "M", "color": "blanco", "available": true },
-      { "id": "rcl-blanco-l", "size": "L", "color": "blanco", "available": true },
-      { "id": "rcl-blanco-xl", "size": "XL", "color": "blanco", "available": true }
+      {
+        "id": "rcl-blanco-m",
+        "size": "M",
+        "color": "blanco",
+        "available": true
+      },
+      {
+        "id": "rcl-blanco-l",
+        "size": "L",
+        "color": "blanco",
+        "available": true
+      },
+      {
+        "id": "rcl-blanco-xl",
+        "size": "XL",
+        "color": "blanco",
+        "available": true
+      }
     ]
   },
   {
@@ -164,13 +337,31 @@
         "key": "azul",
         "name": "Azul Noche",
         "hex": "#24345c",
-        "photos": ["/img/rno-azul-1.svg", "/img/rno-azul-2.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/24345c/f5f2ec.png?text=R.%20Noche%2001&font=montserrat",
+          "https://placehold.co/1200x1600/24345c/f5f2ec.png?text=R.%20Noche%2002&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rno-azul-m", "size": "M", "color": "azul", "available": true },
-      { "id": "rno-azul-l", "size": "L", "color": "azul", "available": true },
-      { "id": "rno-azul-xl", "size": "XL", "color": "azul", "available": false }
+      {
+        "id": "rno-azul-m",
+        "size": "M",
+        "color": "azul",
+        "available": true
+      },
+      {
+        "id": "rno-azul-l",
+        "size": "L",
+        "color": "azul",
+        "available": true
+      },
+      {
+        "id": "rno-azul-xl",
+        "size": "XL",
+        "color": "azul",
+        "available": false
+      }
     ]
   },
   {
@@ -183,13 +374,30 @@
         "key": "celeste",
         "name": "Celeste",
         "hex": "#a7c4d6",
-        "photos": ["/img/rci-celeste-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/a7c4d6/1a1a1a.png?text=R.%20Cielo%2001&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rci-celeste-s", "size": "S", "color": "celeste", "available": true },
-      { "id": "rci-celeste-m", "size": "M", "color": "celeste", "available": true },
-      { "id": "rci-celeste-l", "size": "L", "color": "celeste", "available": true }
+      {
+        "id": "rci-celeste-s",
+        "size": "S",
+        "color": "celeste",
+        "available": true
+      },
+      {
+        "id": "rci-celeste-m",
+        "size": "M",
+        "color": "celeste",
+        "available": true
+      },
+      {
+        "id": "rci-celeste-l",
+        "size": "L",
+        "color": "celeste",
+        "available": true
+      }
     ]
   },
   {
@@ -202,12 +410,25 @@
         "key": "gris",
         "name": "Gris Perla",
         "hex": "#cfccc6",
-        "photos": ["/img/rgr-gris-1.svg", "/img/rgr-gris-2.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/cfccc6/1a1a1a.png?text=R.%20Gris%20Perla%2001&font=montserrat",
+          "https://placehold.co/1200x1600/cfccc6/1a1a1a.png?text=R.%20Gris%20Perla%2002&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rgr-gris-m", "size": "M", "color": "gris", "available": true },
-      { "id": "rgr-gris-l", "size": "L", "color": "gris", "available": true }
+      {
+        "id": "rgr-gris-m",
+        "size": "M",
+        "color": "gris",
+        "available": true
+      },
+      {
+        "id": "rgr-gris-l",
+        "size": "L",
+        "color": "gris",
+        "available": true
+      }
     ]
   },
   {
@@ -220,20 +441,46 @@
         "key": "negro",
         "name": "Negro",
         "hex": "#1a1a1a",
-        "photos": ["/img/rtr-negro-1.svg", "/img/rtr-negro-2.svg", "/img/rtr-negro-3.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Tributo%2001&font=montserrat",
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Tributo%2002&font=montserrat",
+          "https://placehold.co/1200x1600/1a1a1a/f5f2ec.png?text=R.%20Tributo%2003&font=montserrat"
+        ]
       },
       {
         "key": "blanco",
         "name": "Blanco",
         "hex": "#faf9f6",
-        "photos": ["/img/rtr-blanco-1.svg"]
+        "photos": [
+          "https://placehold.co/1200x1600/faf9f6/1a1a1a.png?text=R.%20Tributo%2001&font=montserrat"
+        ]
       }
     ],
     "variants": [
-      { "id": "rtr-negro-m", "size": "M", "color": "negro", "available": true },
-      { "id": "rtr-negro-l", "size": "L", "color": "negro", "available": false },
-      { "id": "rtr-blanco-m", "size": "M", "color": "blanco", "available": true },
-      { "id": "rtr-blanco-l", "size": "L", "color": "blanco", "available": true }
+      {
+        "id": "rtr-negro-m",
+        "size": "M",
+        "color": "negro",
+        "available": true
+      },
+      {
+        "id": "rtr-negro-l",
+        "size": "L",
+        "color": "negro",
+        "available": false
+      },
+      {
+        "id": "rtr-blanco-m",
+        "size": "M",
+        "color": "blanco",
+        "available": true
+      },
+      {
+        "id": "rtr-blanco-l",
+        "size": "L",
+        "color": "blanco",
+        "available": true
+      }
     ]
   }
 ]

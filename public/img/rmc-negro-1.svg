@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700">
-  <rect width="600" height="700" fill="#efece6"/>
-  <g>
-    <path d="M210 95 H270 Q300 128 330 95 H390 L445 165 L540 135 Q572 220 580 335 L485 375 V625 H115 V375 L20 335 Q28 220 60 135 L155 165 Z" fill="#1a1a1a" stroke="#171717" stroke-opacity="0.06"/>
-  </g>
-  <text x="40" y="666" font-family="-apple-system, Segoe UI, sans-serif" font-size="15" letter-spacing="4" fill="#171717" opacity="0.35">PODIO CLUB 01</text>
-</svg>

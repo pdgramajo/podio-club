@@ -1,5 +1,3 @@
-import { existsSync } from 'node:fs'
-import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { loadCatalog, loadSiteConfig, parseCatalog, parseSiteConfig } from './repository'
 
@@ -31,13 +29,13 @@ describe('loadCatalog', () => {
     expect(new Set(ids).size).toBe(ids.length)
   })
 
-  it('references existing image placeholders', () => {
+  it('all photos are valid placehold.co URLs', () => {
     const catalog = loadCatalog()
     const photos = catalog.flatMap((product) => product.colors.flatMap((color) => color.photos))
-    const missing = photos.filter(
-      (photo) => !existsSync(resolve('public', photo.replace(/^\//, ''))),
-    )
-    expect(missing).toEqual([])
+    expect(photos.length).toBeGreaterThan(0)
+    for (const photo of photos) {
+      expect(photo).toMatch(/^https:\/\/placehold\.co\/\d+x\d+\/[a-f0-9]+\/[a-f0-9]+\.png/)
+    }
   })
 })
 
