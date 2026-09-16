@@ -6,6 +6,5 @@ export default defineConfig({
   base: process.env.GH_PAGES_BASE ?? '/',
   test: {
     environment: 'jsdom',
-    passWithNoTests: true,
   },
 })
