@@ -1,5 +1,9 @@
 name: Deploy a GitHub Pages
 
+# Dependencia CI -> Deploy: este workflow NO reacciona a push directamente.
+# Se dispara únicamente cuando el workflow `CI` completa su ejecución sobre la
+# rama main; el guard `if` del job confirma que esa ejecución terminó con
+# éxito (los 4 jobs: lint, format, test y build).
 on:
   workflow_run:
     workflows: ['CI']
@@ -20,11 +24,15 @@ jobs:
   deploy:
     name: Publicar en GitHub Pages
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    # workflow_run fires on completion (success or failure). Deploy only when
+    # the whole CI workflow ended successfully on main, or on manual dispatch.
+    if: ${{ (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') || github.event_name == 'workflow_dispatch' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # El deploy reconstruye el proyecto (npm ci + build) y publica dist/,
+      # por lo que no depende de artefactos subidos por CI.
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
