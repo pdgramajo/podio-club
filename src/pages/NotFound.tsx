@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 
+import { useDocumentTitle } from '../application/useDocumentTitle'
+
 export default function NotFoundPage() {
+  useDocumentTitle('Página no encontrada — Podio Club')
   return (
     <div className="flex flex-1 flex-col items-start gap-4 pb-24 pt-20">
       <p className="inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-muted before:h-px before:w-6 before:bg-accent before:content-['']">

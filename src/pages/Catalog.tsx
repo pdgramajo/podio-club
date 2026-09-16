@@ -9,7 +9,10 @@ const eyebrowClass =
 const chipBase =
   'rounded-full border px-3.5 py-1.5 text-[0.76rem] font-semibold uppercase tracking-[0.08em] transition-colors duration-200'
 
+import { useDocumentTitle } from '../application/useDocumentTitle'
+
 export default function CatalogPage() {
+  useDocumentTitle('Catálogo — Podio Club')
   const { products } = useCatalog()
   const { query, setQuery, size, setSize, color, setColor, filtered } = useFilters(products)
 

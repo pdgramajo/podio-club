@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useCatalog } from '../application/catalog/useCatalog'
+import { useDocumentTitle } from '../application/useDocumentTitle'
 import { useToast } from '../application/toast/useToast'
 import { useCart } from '../application/cart/useCart'
 import { SIZES } from '../domain/catalog'
@@ -14,6 +15,11 @@ export default function ProductDetailPage() {
   const { show } = useToast()
 
   const selectedProduct = product(slug)
+  useDocumentTitle(
+    selectedProduct
+      ? `${selectedProduct.name} — Podio Club`
+      : 'Producto no encontrado — Podio Club',
+  )
 
   const [colorKey, setColorKey] = useState<string | undefined>(selectedProduct?.colors[0]?.key)
   const [size, setSize] = useState<Size>(config.defaultSize)

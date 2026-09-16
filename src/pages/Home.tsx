@@ -1,12 +1,14 @@
 import type { MouseEvent } from 'react'
 import { Link } from 'react-router-dom'
 import { useCatalog } from '../application/catalog/useCatalog'
+import { useDocumentTitle } from '../application/useDocumentTitle'
 import ProductCard from '../components/product/ProductCard'
 
 const eyebrowClass =
   "inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-muted before:h-px before:w-6 before:bg-accent before:content-['']"
 
 export default function HomePage() {
+  useDocumentTitle('Podio Club — Remeras para el podio')
   const { featured } = useCatalog()
 
   const scrollToFeatured = (event: MouseEvent<HTMLAnchorElement>) => {

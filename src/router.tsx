@@ -1,10 +1,12 @@
+import { lazy } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
-import Cart from './pages/Cart'
-import Catalog from './pages/Catalog'
-import Home from './pages/Home'
-import NotFound from './pages/NotFound'
-import ProductDetail from './pages/ProductDetail'
+
+const Home = lazy(() => import('./pages/Home'))
+const Catalog = lazy(() => import('./pages/Catalog'))
+const ProductDetail = lazy(() => import('./pages/ProductDetail'))
+const Cart = lazy(() => import('./pages/Cart'))
+const NotFound = lazy(() => import('./pages/NotFound'))
 
 export const router = createBrowserRouter([
   {

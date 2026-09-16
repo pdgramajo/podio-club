@@ -6,7 +6,10 @@ import { buildWhatsAppUrl } from '../application/whatsapp'
 import { formatARS } from '../domain/money'
 import type { ResolvedCartLine } from '../domain/cart'
 
+import { useDocumentTitle } from '../application/useDocumentTitle'
+
 export default function CartPage() {
+  useDocumentTitle('Carrito — Podio Club')
   const { products, config } = useCatalog()
   const { state, increment, decrement, remove, clear } = useCart()
   const { lines, total, hasUnavailableLines, itemCount } = selectCart(products, state)
