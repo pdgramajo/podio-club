@@ -27,7 +27,7 @@ export default function ProductDetailPage() {
 
   if (!selectedProduct) {
     return (
-      <div className="flex flex-1 flex-col items-start gap-4 pb-24 pt-12">
+      <div className="mx-auto flex max-w-[1120px] flex-col items-start gap-4 px-6 pb-24 pt-12">
         <p className="inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-muted before:h-px before:w-6 before:bg-accent before:content-['']">
           404
         </p>
@@ -66,7 +66,7 @@ export default function ProductDetailPage() {
   }
 
   return (
-    <div className="pb-24 pt-6">
+    <div className="mx-auto max-w-[1120px] px-6 pb-24 pt-6">
       <Link to="/catalogo" className="text-sm text-muted transition-colors hover:text-accent">
         ← Volver al catálogo
       </Link>

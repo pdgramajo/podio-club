@@ -19,11 +19,7 @@ export default function App() {
 
       <div className="flex min-h-screen flex-col bg-paper">
         <NavBar />
-        <main
-          id="contenido"
-          tabIndex={-1}
-          className="mx-auto w-full max-w-[1120px] flex-1 px-6 pt-8 focus:outline-none"
-        >
+        <main id="contenido" tabIndex={-1} className="flex-1 focus:outline-none">
           <Outlet />
         </main>
         <Footer />

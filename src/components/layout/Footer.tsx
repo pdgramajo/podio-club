@@ -6,8 +6,8 @@ export default function Footer() {
   const whatsAppUrl = `https://wa.me/${config.whatsAppPhone}`
 
   return (
-    <footer className="mt-16 w-full border-t border-line bg-paper-2 px-6 py-10">
-      <div className="mx-auto flex max-w-[1120px] flex-wrap items-baseline justify-between gap-6">
+    <footer className="w-full border-t border-line bg-paper-2 py-10">
+      <div className="mx-auto flex max-w-[1120px] flex-wrap items-baseline justify-between gap-6 px-6">
         <div>
           <p className="font-display text-xl font-semibold">Podio&nbsp;Club</p>
           <p className="mt-1 max-w-xs text-sm text-muted">

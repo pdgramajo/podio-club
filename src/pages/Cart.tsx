@@ -16,7 +16,7 @@ export default function CartPage() {
 
   if (lines.length === 0) {
     return (
-      <div className="flex flex-1 flex-col items-start gap-4 pb-24 pt-20">
+      <div className="mx-auto flex max-w-[1120px] flex-col items-start gap-4 px-6 pb-24 pt-20">
         <p className="inline-flex items-center gap-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-muted before:h-px before:w-6 before:bg-accent before:content-['']">
           Carrito
         </p>
@@ -35,7 +35,7 @@ export default function CartPage() {
   const whatsAppUrl = buildWhatsAppUrl(config.whatsAppPhone, { lines, total })
 
   return (
-    <div className="pb-24 pt-6">
+    <div className="mx-auto max-w-[1120px] px-6 pb-24 pt-6">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="font-display text-4xl text-ink md:text-5xl">Carrito</h1>

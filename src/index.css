@@ -18,6 +18,9 @@
   --color-accent: #d64524;
   --color-accent-deep: #b8381c;
 
+  --color-gold: #c9a227;
+  --color-gold-dark: #a88619;
+
   --animate-reveal: reveal 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 
   @keyframes reveal {

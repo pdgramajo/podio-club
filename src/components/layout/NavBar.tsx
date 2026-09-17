@@ -15,27 +15,29 @@ export default function NavBar() {
   const itemCount = state.reduce((sum, line) => sum + line.quantity, 0)
 
   return (
-    <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-line bg-paper/85 px-6 py-4 backdrop-blur-md">
-      <NavLink to="/" className="font-display text-xl font-semibold no-underline">
-        Podio&nbsp;Club
-      </NavLink>
-      <nav className="flex items-center gap-6" aria-label="Navegación principal">
-        <NavLink to="/catalogo" className={navLinkClass}>
-          Catálogo
+    <header className="sticky top-0 z-20 border-b border-line bg-paper/85 backdrop-blur-md">
+      <div className="mx-auto flex max-w-[1120px] flex-wrap items-center justify-between gap-x-4 gap-y-2 px-6 py-4">
+        <NavLink to="/" className="font-display text-xl font-semibold no-underline">
+          Podio&nbsp;Club
         </NavLink>
-        <NavLink
-          to="/carrito"
-          className={navLinkClass}
-          aria-label={`Carrito (${itemCount} artículos)`}
-        >
-          Carrito
-          {itemCount > 0 && (
-            <span className="ml-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-[0.7rem] font-semibold leading-none text-paper">
-              {itemCount}
-            </span>
-          )}
-        </NavLink>
-      </nav>
+        <nav className="flex items-center gap-6" aria-label="Navegación principal">
+          <NavLink to="/catalogo" className={navLinkClass}>
+            Catálogo
+          </NavLink>
+          <NavLink
+            to="/carrito"
+            className={navLinkClass}
+            aria-label={`Carrito (${itemCount} artículos)`}
+          >
+            Carrito
+            {itemCount > 0 && (
+              <span className="ml-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-[0.7rem] font-semibold leading-none text-paper">
+                {itemCount}
+              </span>
+            )}
+          </NavLink>
+        </nav>
+      </div>
     </header>
   )
 }

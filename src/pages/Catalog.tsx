@@ -29,7 +29,7 @@ export default function CatalogPage() {
   }
 
   return (
-    <div className="pb-4">
+    <div className="mx-auto max-w-[1120px] px-6 pb-4">
       <p className={eyebrowClass}>Catálogo</p>
       <h1 className="mt-3 mb-2 font-display text-[clamp(2.2rem,5vw,3.4rem)] font-normal tracking-tighter">
         Remeras
